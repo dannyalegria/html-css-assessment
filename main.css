@@ -13,6 +13,7 @@ body{
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 .horizontal-nav{
@@ -90,24 +91,30 @@ a {
   width: 50px;
 }
 
-
 @media (max-width: 815px){
   .horizontal-nav{
     display:none;
   }
 
   .vertical-nav{
-    display:inline-block;
+    display:block;
     height:50px;
     color: white;
     width:100%;
+    padding: 20px;
   }
 
-  .vertical-nav ul {
-    list-style-type: none;
-    width:100%;
-    margin:0 auto;
-    float:right;
+  .dropdown{
+    float: left;
+  }
+
+  .social-icons{
+    float: right;
+  }
+
+  .spacer{
+    display:inline-block;
+    width:10px;
   }
 
 }
